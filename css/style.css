@@ -1,28 +1,49 @@
-* {
+html,
+body {
+    height: 100vh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 body {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
-    width: 1000px;
     height: 100vh;
-    margin: 150px auto;
+    width: 1000px;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #2a425b;
+}
+
+.footer {
+    padding: 40px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
 }
 
 .flex-keyboard {
     user-select: none;
     padding: 5px;
-    flex: 1;
     height: 350px;
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.76);
+    background: #15212d;
     border-radius: 10px;
     box-shadow: 3px 3px black;
 }
@@ -41,7 +62,7 @@ body {
     align-items: center;
     margin: 1px;
     background: #F1F0EC;
-    box-shadow: 0px -4px 2px 9px #b9b8ae inset;
+    box-shadow: 0px -4px 2px 9px #c0c0bc inset;
     border: 1px solid black;
 }
 
@@ -55,7 +76,7 @@ body {
 
 .special-key {
     background: #6aa6e4;
-    box-shadow: 0px -4px 1px 9px #355372 inset;
+    box-shadow: 0px -4px 1px 9px #4a749f inset;
     color: white;
 }
 
@@ -69,17 +90,17 @@ body {
     /* font-size: 20px; */
 }
 
-.backspace{
+.backspace {
     font-size: 25px;
 }
 
 .caps-key,
 .enter {
-    flex-basis: 120px;
+    flex-basis: 150px;
 }
 
 .shift {
-    flex-basis: 160px;
+    flex-basis: 200px;
 }
 
 .spacebar {
