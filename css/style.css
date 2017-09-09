@@ -2,22 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .wrapper {
     width: 1000px;
     height: 100vh;
-    margin: 50px auto;
+    margin: 150px auto;
 }
 
 .flex-keyboard {
-    padding: 10px;
+    user-select: none;
+    padding: 5px;
     flex: 1;
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    background: #76BDBE;
-    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.76);
+    border-radius: 10px;
     box-shadow: 3px 3px black;
 }
 
@@ -33,9 +39,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2px;
-    background: #E4E3D9;
-    box-shadow: 0px -4px 2px 9px #b9b8ae inset
+    margin: 1px;
+    background: #F1F0EC;
+    box-shadow: 0px -4px 2px 9px #b9b8ae inset;
+    border: 1px solid black;
+}
+
+.key:active {
+    transform: translateY(3px);
+}
+
+.key span {
+    margin-bottom: 4px;
+}
+
+.special-key {
+    background: #6aa6e4;
+    box-shadow: 0px -4px 1px 9px #355372 inset;
+    color: white;
+}
+
+.slash-key {
+    flex: 1 1 100px;
+}
+
+.tab-key,
+.backspace {
+    flex-basis: 110px;
+    /* font-size: 20px; */
+}
+
+.backspace{
+    font-size: 25px;
+}
+
+.caps-key,
+.enter {
+    flex-basis: 120px;
+}
+
+.shift {
+    flex-basis: 160px;
 }
 
 .spacebar {

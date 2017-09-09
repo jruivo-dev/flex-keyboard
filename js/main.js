@@ -1,0 +1,1 @@
+let keys = document.querySelectorAll('div.key');
