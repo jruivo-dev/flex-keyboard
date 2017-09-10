@@ -1,5 +1,4 @@
-# flex-keyboard
-
+# Flex-Keyboard 
 Keyboard 60% version I created using flexbox + JS for fun.
 
 [Live demo](https://jruivo-dev.github.io/flex-keyboard/) happy clicking !
